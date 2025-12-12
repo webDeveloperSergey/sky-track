@@ -1,7 +1,7 @@
 import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
 import { BrowserRouter, Route, Routes } from 'react-router'
-import { Home } from './screens/home/Home'
+import { Home } from '@screens/home/Home'
 import './index.css'
 
 createRoot(document.getElementById('root')!).render(
