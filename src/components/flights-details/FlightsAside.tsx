@@ -1,6 +1,9 @@
+import { ASIDE_SLIDE_RIGHT } from '@/constants/animations'
 import { FLIGHTS_QUERY } from '@components/flights-list/flights.constants'
 import { FLIGHTS } from '@components/flights-list/flights.data'
+import { AnimatePresence, motion } from 'motion/react'
 import { useSearchParams } from 'react-router'
+import { FlightsDetailsHeader } from './FlightsDetailsHeader'
 
 export function FlightsAside() {
 	const [searchParams] = useSearchParams()
@@ -10,20 +13,18 @@ export function FlightsAside() {
 	)
 
 	return (
-		<aside className='w-sm m-5 rounded-2xl bg-neutral-900'>
-			{/* Header */}
-			<div>
-				<div>
-					<div>
-						<h2>{findFlight?.airline}</h2>
-						<span>{findFlight?.airplane.name}</span>
-					</div>
-					<button>Close</button>
-				</div>
-			</div>
+		<AnimatePresence>
+			{findFlight && (
+				<motion.aside
+					{...ASIDE_SLIDE_RIGHT}
+					className='w-sm m-5 rounded-2xl bg-[#0F1110]'
+				>
+					<FlightsDetailsHeader flight={findFlight} />
 
-			{/* Main Flight`s data */}
-			<div></div>
-		</aside>
+					{/* Main Flight`s data */}
+					<div></div>
+				</motion.aside>
+			)}
+		</AnimatePresence>
 	)
 }

@@ -23,7 +23,7 @@ export const FLIGHTS: IFlight[] = [
 			image: '/planes/turkish.png',
 			name: 'Airbus A330',
 		},
-		colorGradient: ['#ffdede', '#ffbaba'],
+		colorGradient: ['from-pink-light', 'to-pink-medium'],
 		route: {
 			speed: 870,
 			altitude: 10600,
@@ -51,7 +51,7 @@ export const FLIGHTS: IFlight[] = [
 			image: '/planes/ryanair.png',
 			name: 'Boeing 737-800',
 		},
-		colorGradient: ['#A1C6E1', '#88B5E0'],
+		colorGradient: ['from-blue-light', 'to-blue-medium'],
 		route: {
 			speed: 840,
 			altitude: 11200,
@@ -79,7 +79,7 @@ export const FLIGHTS: IFlight[] = [
 			image: '/planes/s7.png',
 			name: 'Airbus A320neo',
 		},
-		colorGradient: ['#d6ffe5', '#96f2c1'],
+		colorGradient: ['from-green-light', 'to-green-medium'],
 		route: {
 			speed: 860,
 			altitude: 10900,
@@ -107,7 +107,7 @@ export const FLIGHTS: IFlight[] = [
 			image: '/planes/swiss.png',
 			name: 'Airbus A220-300',
 		},
-		colorGradient: ['#e6e6ff', '#a8b4ff'],
+		colorGradient: ['from-purple-light', 'to-purple-medium'],
 		route: {
 			speed: 830,
 			altitude: 10700,
@@ -135,7 +135,7 @@ export const FLIGHTS: IFlight[] = [
 			image: '/planes/lufthansa.png',
 			name: 'Airbus A350-900',
 		},
-		colorGradient: ['#e5f2ff', '#9dd2f9'],
+		colorGradient: ['from-sky-light', 'to-sky-medium'],
 		route: {
 			speed: 890,
 			altitude: 11300,
