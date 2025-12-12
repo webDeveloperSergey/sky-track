@@ -1,14 +1,17 @@
+import { Home } from '@screens/home/Home'
 import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
 import { BrowserRouter, Route, Routes } from 'react-router'
-import { Home } from '@screens/home/Home'
+import { BaseLayout } from './components/BaseLyout'
 import './index.css'
 
 createRoot(document.getElementById('root')!).render(
 	<StrictMode>
 		<BrowserRouter>
 			<Routes>
-				<Route path='/' element={<Home />} />
+				<Route element={<BaseLayout />}>
+					<Route index element={<Home />} />
+				</Route>
 			</Routes>
 		</BrowserRouter>
 	</StrictMode>

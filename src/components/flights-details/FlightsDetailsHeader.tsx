@@ -35,7 +35,7 @@ export function FlightsDetailsHeader({ flight }: Props) {
 					}}
 					className='flex justify-center items-center bg-neutral-800 rounded-full h-8 w-8'
 				>
-					<X size={20} animateOnHover animateOnView />
+					<X size={20} animateOnHover />
 				</button>
 			</div>
 
