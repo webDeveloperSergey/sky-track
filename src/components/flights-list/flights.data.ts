@@ -3,7 +3,11 @@ import type { IFlight } from './flights.types'
 export const FLIGHTS: IFlight[] = [
 	{
 		logo: '/logos/turkish.svg',
-		airline: 'TK143',
+		id: 'TK143',
+		airline: {
+			name: 'Turkish Airlines',
+			country: 'Turkey',
+		},
 		aircraftReg: 'TC-JFP',
 		from: {
 			city: 'Sofia',
@@ -31,7 +35,11 @@ export const FLIGHTS: IFlight[] = [
 	},
 	{
 		logo: '/logos/ryanair.svg',
-		airline: 'RN1782',
+		id: 'RN1782',
+		airline: {
+			name: 'Ryanair',
+			country: 'Ireland',
+		},
 		aircraftReg: 'D-AISP',
 		from: {
 			city: 'Dublin',
@@ -59,7 +67,8 @@ export const FLIGHTS: IFlight[] = [
 	},
 	{
 		logo: '/logos/s7.svg',
-		airline: 'S7124',
+		id: 'S7124',
+		airline: { name: 'S7 Airlines', country: 'Russia' },
 		aircraftReg: 'RA-73415',
 		from: {
 			city: 'Nice',
@@ -87,7 +96,11 @@ export const FLIGHTS: IFlight[] = [
 	},
 	{
 		logo: '/logos/swiss.svg',
-		airline: 'LX318',
+		id: 'LX318',
+		airline: {
+			name: 'SWISS International Air Lines',
+			country: 'Switzerland',
+		},
 		aircraftReg: 'HB-JHK',
 		from: {
 			city: 'Porto',
@@ -115,7 +128,8 @@ export const FLIGHTS: IFlight[] = [
 	},
 	{
 		logo: '/logos/lufthansa.svg',
-		airline: 'LH401',
+		id: 'LH401',
+		airline: { name: 'Lufthansa', country: 'Germany' },
 		aircraftReg: 'D-AIXD',
 		from: {
 			city: 'Burgas',

@@ -1,5 +1,5 @@
-import { useSearchParams } from 'react-router'
 import { cn } from '@utils/cn'
+import { useSearchParams } from 'react-router'
 import { FLIGHTS_QUERY } from './flights.constants'
 import type { IFlight } from './flights.types'
 
@@ -10,7 +10,7 @@ interface Props {
 export function FlightsCard({ flight }: Props) {
 	const [searchParams, setSearchParams] = useSearchParams()
 
-	const isActiveFlight = searchParams.get(FLIGHTS_QUERY) === flight.airline
+	const isActiveFlight = searchParams.get(FLIGHTS_QUERY) === flight.id
 
 	return (
 		<div
@@ -20,7 +20,7 @@ export function FlightsCard({ flight }: Props) {
 					? 'bg-linear-to-r from-rose-500 to-orange-400'
 					: 'bg-transparent'
 			)}
-			onClick={() => setSearchParams({ [FLIGHTS_QUERY]: flight.airline })}
+			onClick={() => setSearchParams({ [FLIGHTS_QUERY]: flight.id })}
 		>
 			<div className='rounded-2xl p-5 space-y-7 bg-neutral-900'>
 				{/* Header */}
@@ -33,7 +33,7 @@ export function FlightsCard({ flight }: Props) {
 							height={35}
 							className='rounded-full bg-white'
 						/>
-						<span className='uppercase'>{flight.airline}</span>
+						<span className='uppercase'>{flight.id}</span>
 					</div>
 
 					<span className='px-2.5 py-1 bg-neutral-800 rounded-full text-sm uppercase'>

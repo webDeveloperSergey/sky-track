@@ -5,7 +5,7 @@ import { FLIGHTS_QUERY } from '../flights-list/flights.constants'
 import type { IFlight } from '../flights-list/flights.types'
 
 interface Props {
-	flight: IFlight | undefined
+	flight: IFlight
 }
 
 export function FlightsDetailsHeader({ flight }: Props) {
@@ -21,8 +21,8 @@ export function FlightsDetailsHeader({ flight }: Props) {
 		>
 			<div className='w-[90%] flex justify-between items-center p-4 rounded-xl bg-neutral-900 top-3 left-1/2 -translate-x-1/2 absolute'>
 				<div className=''>
-					<h2 className='font-semibold text-xl text-[#E1A533]'>
-						{flight?.airline || 'No airline not found'}
+					<h2 className='w-57 font-semibold text-xl text-[#E1A533]'>
+						{flight?.airline.name || 'No airline not found'}
 					</h2>
 					<span className='text-xs'>
 						{flight?.airplane.name || 'airplane name not found'}
