@@ -1,11 +1,11 @@
-import { FlightsAside } from '@/components/flights-details/FlightsAside'
-import { FlightsList } from '@components/flights-list/FlightsList'
+import { FlightsDetails } from '@/components/FlightsDetails'
+import { FlightsList } from '@/components/FlightsList'
 
 export function Home() {
 	return (
 		<div className='flex justify-between'>
 			<FlightsList />
-			<FlightsAside />
+			<FlightsDetails />
 		</div>
 	)
 }

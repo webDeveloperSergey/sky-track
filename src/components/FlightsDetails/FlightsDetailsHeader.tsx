@@ -1,8 +1,8 @@
 import { cn } from '@/lib/utils'
 import { useSearchParams } from 'react-router'
 import { X } from '../animate-ui/icons/x'
-import { FLIGHTS_QUERY } from '../flights-list/flights.constants'
-import type { IFlight } from '../flights-list/flights.types'
+import { FLIGHTS_QUERY } from '../FlightsList/flights.constants'
+import type { IFlight } from '../FlightsList/flights.types'
 
 interface Props {
 	flight: IFlight

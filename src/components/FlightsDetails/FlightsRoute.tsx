@@ -1,6 +1,6 @@
 import { cn } from '@/utils/cn'
 import { Plane } from 'lucide-react'
-import type { IFlight } from '../flights-list/flights.types'
+import type { IFlight } from '../FlightsList/flights.types'
 
 interface Props {
 	flight: IFlight

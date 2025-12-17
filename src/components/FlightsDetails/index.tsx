@@ -1,8 +1,8 @@
+import { FLIGHTS } from '@/components/FlightsList/flights.data'
 import { SLIDE_RIGHT_ANIMATION } from '@/constants/animations'
-import { FLIGHTS } from '@components/flights-list/flights.data'
 import { AnimatePresence, motion } from 'motion/react'
 import { useSearchParams } from 'react-router'
-import { FLIGHTS_QUERY } from '../flights-list/flights.constants'
+import { FLIGHTS_QUERY } from '../FlightsList/flights.constants'
 import { FlightsActions } from './FlightsActions'
 import { FlightsDetailsHeader } from './FlightsDetailsHeader'
 import { FlightsInformation } from './FlightsInformation'
@@ -10,7 +10,7 @@ import { FlightsProgressBar } from './FlightsProgressBar'
 import { FlightsRoute } from './FlightsRoute'
 import { FlightsSchedule } from './FlightsSchedule'
 
-export function FlightsAside() {
+export function FlightsDetails() {
 	const [searchParams] = useSearchParams()
 
 	const findFlight = FLIGHTS.find(

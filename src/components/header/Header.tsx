@@ -33,9 +33,9 @@ export function Header() {
 				{/* TODO: Config */}
 				<Link
 					to='/favorites'
-					className='bg-card flex items-center justify-center rounded-full p-2 transition-colors hover:bg-neutral-700 sm:p-1'
+					className='bg-neutral-800 flex items-center justify-center rounded-full p-2 transition-colors hover:bg-neutral-700 sm:p-1'
 				>
-					<Heart size={23} />
+					<Heart animateOnHover size={23} />
 				</Link>
 			</div>
 		</div>

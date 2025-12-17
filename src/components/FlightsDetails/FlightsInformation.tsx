@@ -1,6 +1,6 @@
 import { cn } from '@/utils/cn'
 import type { PropsWithChildren } from 'react'
-import type { IFlight } from '../flights-list/flights.types'
+import type { IFlight } from '../FlightsList/flights.types'
 
 interface FlightsInformationLayoutTmpProps {
 	label?: string
