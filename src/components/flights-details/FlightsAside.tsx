@@ -22,7 +22,7 @@ export function FlightsAside() {
 			{findFlight && (
 				<motion.aside
 					{...SLIDE_RIGHT_ANIMATION}
-					className='w-sm m-5 rounded-2xl bg-[#0F1110]'
+					className='w-sm rounded-2xl bg-[#0F1110] absolute right-7 top-7'
 				>
 					<FlightsDetailsHeader flight={findFlight} />
 
