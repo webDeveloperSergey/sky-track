@@ -6,6 +6,8 @@ import { BaseLayout } from './components/BaseLyout'
 import './index.css'
 import { Provider } from 'react-redux'
 import { store } from './store'
+import { CenterLayout } from './components/CenterLayout'
+import { Favorites } from './screens/favorites/Favorites'
 
 createRoot(document.getElementById('root')!).render(
 	<StrictMode>
@@ -17,6 +19,12 @@ createRoot(document.getElementById('root')!).render(
 							index
 							element={<Home />}
 						/>
+						<Route element={<CenterLayout />}>
+							<Route
+								path="/favorites"
+								element={<Favorites />}
+							/>
+						</Route>
 					</Route>
 				</Routes>
 			</BrowserRouter>
