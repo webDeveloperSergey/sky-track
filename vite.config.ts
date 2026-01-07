@@ -12,6 +12,7 @@ export default defineConfig({
 			'@components': path.resolve(__dirname, './src/components'),
 			'@utils': path.resolve(__dirname, './src/utils'),
 			'@screens': path.resolve(__dirname, './src/screens'),
-		},
-	},
+			'@store': path.resolve(__dirname, './src/store')
+		}
+	}
 })

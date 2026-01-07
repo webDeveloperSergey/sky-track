@@ -2,6 +2,7 @@ import { cn } from '@utils/cn'
 import { useSearchParams } from 'react-router'
 import { FLIGHTS_QUERY } from './flights.constants'
 import type { IFlight } from './flights.types'
+import { FlightsFavorites } from './FlightsFavorites'
 
 interface Props {
 	flight: IFlight
@@ -22,37 +23,40 @@ export function FlightsCard({ flight }: Props) {
 			)}
 			onClick={() => setSearchParams({ [FLIGHTS_QUERY]: flight.id })}
 		>
-			<div className='rounded-2xl p-5 space-y-7 bg-neutral-900'>
+			<div className="rounded-2xl p-5 space-y-7 bg-neutral-900">
 				{/* Header */}
-				<div className='flex justify-between items-center '>
-					<div className='flex items-center gap-3'>
+				<div className="flex justify-between items-center ">
+					<div className="flex items-center gap-3">
 						<img
 							src={flight.logo}
 							alt={flight.aircraftReg}
 							width={35}
 							height={35}
-							className='rounded-full bg-white'
+							className="rounded-full bg-white"
 						/>
-						<span className='uppercase'>{flight.id}</span>
+						<span className="uppercase">{flight.id}</span>
 					</div>
 
-					<span className='px-2.5 py-1 bg-neutral-800 rounded-full text-sm uppercase'>
-						{flight.aircraftReg}
-					</span>
+					<div className="flex gap-2 items-center">
+						<span className="px-2.5 py-1 bg-neutral-800 rounded-full text-sm uppercase">
+							{flight.aircraftReg}
+						</span>
+						<FlightsFavorites flightId={flight.id} />
+					</div>
 				</div>
 
 				{/* Race info */}
-				<div className='flex justify-between'>
+				<div className="flex justify-between">
 					<div>
-						<span className='text-xs'>{flight.from.city}</span>
-						<h2 className='text-3xl font-semibold'>{flight.from.code}</h2>
+						<span className="text-xs">{flight.from.city}</span>
+						<h2 className="text-3xl font-semibold">{flight.from.code}</h2>
 					</div>
 
 					{/* Progress Bar */}
 
 					<div>
-						<span className='text-xs'>{flight.to.city}</span>
-						<h2 className='text-3xl font-medium'>{flight.to.code}</h2>
+						<span className="text-xs">{flight.to.city}</span>
+						<h2 className="text-3xl font-medium">{flight.to.code}</h2>
 					</div>
 				</div>
 			</div>
