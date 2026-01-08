@@ -3,6 +3,7 @@ import { useSearchParams } from 'react-router'
 import { FLIGHTS_QUERY } from './flights.constants'
 import type { IFlight } from './flights.types'
 import { FlightsFavorites } from './FlightsFavorites'
+import { ProgressBar } from '../custom-ui/ProgressBar'
 
 interface Props {
 	flight: IFlight
@@ -46,13 +47,15 @@ export function FlightsCard({ flight }: Props) {
 				</div>
 
 				{/* Race info */}
-				<div className="flex justify-between">
+				<div className="grid grid-cols-[1fr_5fr_1fr] items-end gap-4">
 					<div>
 						<span className="text-xs">{flight.from.city}</span>
 						<h2 className="text-3xl font-semibold">{flight.from.code}</h2>
 					</div>
 
-					{/* Progress Bar */}
+					<div className="relative -translate-y-4">
+						<ProgressBar percentage={flight.progress} />
+					</div>
 
 					<div>
 						<span className="text-xs">{flight.to.city}</span>

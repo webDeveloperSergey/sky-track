@@ -6,7 +6,7 @@ export const FLIGHTS: IFlight[] = [
 		id: 'TK143',
 		airline: {
 			name: 'Turkish Airlines',
-			country: 'Turkey',
+			country: 'Turkey'
 		},
 		aircraftReg: 'TC-JFP',
 		from: {
@@ -14,31 +14,32 @@ export const FLIGHTS: IFlight[] = [
 			country: 'Bulgaria',
 			countryCode: 'BG',
 			timezone: 'UTC +3',
-			code: 'SOF',
+			code: 'SOF'
 		},
 		to: {
 			city: 'Beijing',
 			country: 'China',
 			countryCode: 'CN',
 			timezone: 'UTC +8',
-			code: 'PEK',
+			code: 'PEK'
 		},
 		airplane: {
 			image: '/planes/turkish.png',
-			name: 'Airbus A330',
+			name: 'Airbus A330'
 		},
 		colorGradient: ['from-pink-light', 'to-pink-medium'],
 		route: {
 			speed: 870,
-			altitude: 10600,
+			altitude: 10600
 		},
+		progress: 73
 	},
 	{
 		logo: '/logos/ryanair.svg',
 		id: 'RN1782',
 		airline: {
 			name: 'Ryanair',
-			country: 'Ireland',
+			country: 'Ireland'
 		},
 		aircraftReg: 'D-AISP',
 		from: {
@@ -46,24 +47,25 @@ export const FLIGHTS: IFlight[] = [
 			country: 'Ireland',
 			countryCode: 'IE',
 			timezone: 'UTC +1',
-			code: 'DUB',
+			code: 'DUB'
 		},
 		to: {
 			city: 'Larnaca',
 			country: 'Cyprus',
 			countryCode: 'CY',
 			timezone: 'UTC +3',
-			code: 'LCA',
+			code: 'LCA'
 		},
 		airplane: {
 			image: '/planes/ryanair.png',
-			name: 'Boeing 737-800',
+			name: 'Boeing 737-800'
 		},
 		colorGradient: ['from-blue-light', 'to-blue-medium'],
 		route: {
 			speed: 840,
-			altitude: 11200,
+			altitude: 11200
 		},
+		progress: 50
 	},
 	{
 		logo: '/logos/s7.svg',
@@ -75,31 +77,32 @@ export const FLIGHTS: IFlight[] = [
 			country: 'France',
 			countryCode: 'FR',
 			timezone: 'UTC +2',
-			code: 'NCE',
+			code: 'NCE'
 		},
 		to: {
 			city: 'Tbilisi',
 			country: 'Georgia',
 			countryCode: 'GE',
 			timezone: 'UTC +4',
-			code: 'TBS',
+			code: 'TBS'
 		},
 		airplane: {
 			image: '/planes/s7.png',
-			name: 'Airbus A320neo',
+			name: 'Airbus A320neo'
 		},
 		colorGradient: ['from-green-light', 'to-green-medium'],
 		route: {
 			speed: 860,
-			altitude: 10900,
+			altitude: 10900
 		},
+		progress: 68
 	},
 	{
 		logo: '/logos/swiss.svg',
 		id: 'LX318',
 		airline: {
 			name: 'SWISS International Air Lines',
-			country: 'Switzerland',
+			country: 'Switzerland'
 		},
 		aircraftReg: 'HB-JHK',
 		from: {
@@ -107,24 +110,25 @@ export const FLIGHTS: IFlight[] = [
 			country: 'Portugal',
 			countryCode: 'PT',
 			timezone: 'UTC +1',
-			code: 'OPO',
+			code: 'OPO'
 		},
 		to: {
 			city: 'Baku',
 			country: 'Azerbaijan',
 			countryCode: 'AZ',
 			timezone: 'UTC +4',
-			code: 'GYD',
+			code: 'GYD'
 		},
 		airplane: {
 			image: '/planes/swiss.png',
-			name: 'Airbus A220-300',
+			name: 'Airbus A220-300'
 		},
 		colorGradient: ['from-purple-light', 'to-purple-medium'],
 		route: {
 			speed: 830,
-			altitude: 10700,
+			altitude: 10700
 		},
+		progress: 85
 	},
 	{
 		logo: '/logos/lufthansa.svg',
@@ -136,23 +140,24 @@ export const FLIGHTS: IFlight[] = [
 			country: 'Bulgaria',
 			countryCode: 'BG',
 			timezone: 'UTC +3',
-			code: 'BOJ',
+			code: 'BOJ'
 		},
 		to: {
 			city: 'Muscat',
 			country: 'Oman',
 			countryCode: 'OM',
 			timezone: 'UTC +4',
-			code: 'MCT',
+			code: 'MCT'
 		},
 		airplane: {
 			image: '/planes/lufthansa.png',
-			name: 'Airbus A350-900',
+			name: 'Airbus A350-900'
 		},
 		colorGradient: ['from-sky-light', 'to-sky-medium'],
 		route: {
 			speed: 890,
-			altitude: 11300,
+			altitude: 11300
 		},
-	},
+		progress: 48
+	}
 ]

@@ -27,7 +27,7 @@ export function FlightsFavorites({ flightId }: { flightId: string }) {
 				animateOnHover
 				animateOnTap
 				fill={isFavoriteRace ? 'white' : 'none'}
-				size={23}
+				size={20}
 			/>
 		</button>
 	)

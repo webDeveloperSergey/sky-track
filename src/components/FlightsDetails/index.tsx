@@ -6,9 +6,9 @@ import { FLIGHTS_QUERY } from '../FlightsList/flights.constants'
 import { FlightsActions } from './FlightsActions'
 import { FlightsDetailsHeader } from './FlightsDetailsHeader'
 import { FlightsInformation } from './FlightsInformation'
-import { FlightsProgressBar } from './FlightsProgressBar'
 import { FlightsRoute } from './FlightsRoute'
 import { FlightsSchedule } from './FlightsSchedule'
+import { FlightsProgress } from './FlightsProgress'
 
 export function FlightsDetails() {
 	const [searchParams] = useSearchParams()
@@ -22,15 +22,15 @@ export function FlightsDetails() {
 			{findFlight && (
 				<motion.aside
 					{...SLIDE_RIGHT_ANIMATION}
-					className='w-sm rounded-2xl bg-[#0F1110] absolute right-7 top-7'
+					className="w-sm rounded-2xl bg-[#0F1110] absolute right-7 top-7"
 				>
 					<FlightsDetailsHeader flight={findFlight} />
 
 					{/* Main Flight`s data */}
-					<div className='flex flex-col gap-3 m-3'>
-						<div className='flex flex-col gap-1'>
+					<div className="flex flex-col gap-3 m-3">
+						<div className="flex flex-col gap-1">
 							<FlightsRoute flight={findFlight} />
-							<FlightsProgressBar />
+							<FlightsProgress progress={findFlight.progress} />
 							<FlightsSchedule />
 						</div>
 

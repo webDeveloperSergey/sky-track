@@ -23,14 +23,12 @@ export function Favorites() {
 				flights here.
 			</SubHeading>
 
-			<div className="">
-				{flights.map(flight => (
-					<FlightsCard
-						key={flight.id}
-						flight={flight}
-					/>
-				))}
-			</div>
+			{flights.map(flight => (
+				<FlightsCard
+					key={flight.id}
+					flight={flight}
+				/>
+			))}
 		</div>
 	)
 }
