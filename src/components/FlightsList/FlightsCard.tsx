@@ -17,7 +17,7 @@ export function FlightsCard({ flight }: Props) {
 	return (
 		<div
 			className={cn(
-				'p-0.5 rounded-2xl transition-colors ease-in cursor-pointer',
+				'p-0.5 rounded-2xl transition-colors ease-in cursor-pointer animate-fadeIn',
 				isActiveFlight
 					? 'bg-linear-to-r from-rose-500 to-orange-400'
 					: 'bg-transparent'
