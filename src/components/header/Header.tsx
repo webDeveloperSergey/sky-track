@@ -13,7 +13,7 @@ export function Header() {
 	const isFavoriteRaceRoute = !!match('/favorites')(location.pathname)
 
 	return (
-		<div className="bg-neutral-900 p-3 absolute top-7 left-1/2 flex w-[40%] -translate-x-1/2 items-center justify-between rounded-xl px-5">
+		<div className="bg-neutral-900 p-3 absolute top-7 left-1/2 flex w-[40%] -translate-x-1/2 items-center justify-between rounded-xl px-5 z-10">
 			<div className="flex items-center gap-4 sm:gap-2">
 				<img
 					src="/logo.svg"

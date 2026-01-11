@@ -24,7 +24,7 @@ export function FlightsList() {
 	}, [])
 
 	return (
-		<div className="w-sm space-y-3">
+		<div className="w-sm space-y-3 z-10">
 			<FlightsFromFilters
 				fromCountry={fromCountry}
 				setFromCountry={setFromCountry}
